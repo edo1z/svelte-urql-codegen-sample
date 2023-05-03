@@ -1,0 +1,9 @@
+ignoreNoDocuments: true
+schema: https://swapi-graphql.netlify.app/.netlify/functions/index
+documents:
+  - "src/lib/queries/**/*.ts"
+generates:
+  src/lib/gql/:
+    preset: client-preset
+    config:
+      useTypeImports: true
